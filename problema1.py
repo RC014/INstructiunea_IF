@@ -15,19 +15,8 @@ n3=int(input("Introduceti numarul curent al elevului:"))
 print("Introduceti punctajul elevului nr.", n3,":")
 p3=int(input())
 
-if p1==p2 and p2==p3:
-    print("Toti elevii au acelasi punctaj")
 
-elif p1==p2 and p1>p3:
-    print("Elevii cu numarul",n1,"si",n2,"au punctaj maxim")
-
-elif p1==p3 and p1>p2:
-    print("Elevii cu numarul",n1,"si",n3,"au punctaj maxim")
-
-elif p2==p3 and p2>p1:
-    print("Elevii cu numarul",n2,"si",n3,"au punctaj maxim")
-
-elif p1>p2 and p1>p3:
+if p1>p2 and p1>p3:
     print("Punctaj maxim are elevul cu numarul",n1)
 
 elif p2>p1 and p2>p3:
@@ -35,6 +24,18 @@ elif p2>p1 and p2>p3:
 
 elif p3>p1 and p3>p2:
     print("Punctaj maxim are elevul cu numarul",n3)
+    
+elif p1==p2 and p2==p3:
+    print("Error")
+
+elif p1==p2 and p1>p3:
+    print("Error")
+
+elif p1==p3 and p1>p2:
+    print("Error")
+
+elif p2==p3 and p2>p1:
+    print("Error")
 
 else:
     print("Error")
